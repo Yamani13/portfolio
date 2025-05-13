@@ -1,0 +1,132 @@
+body {
+  background-color: #e0e1dd;
+  color: #1b263b;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #1b263b;
+  border-bottom: 1px solid #415a77;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-nav .nav-link {
+  color: #e0e1dd;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #415a77;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.logo {
+  width: 40px;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+main h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #415a77;
+}
+
+.overzicht-item {
+  margin-bottom: 4rem;
+}
+.overzicht-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  padding: 4px;
+  background-color: #fff;
+}
+.overzicht-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #415a77;
+}
+.overzicht-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1b263b;
+}
+
+@media (min-width: 768px) {
+  .overzicht-item .tekst-col,
+  .overzicht-item .image-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .overzicht-item:nth-child(even) .tekst-col {
+    order: 2;
+  }
+
+  .overzicht-item:nth-child(even) .image-col {
+    order: 1;
+  }
+}
+
+/* Formulieren */
+form label {
+  color: #1b263b;
+}
+
+form input,
+form textarea {
+  border: 1px solid #415a77;
+}
+
+form button[type="submit"] {
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-color: #415a77;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #1b263b;
+}
+
+/* Footer */
+footer {
+  background-color: #1b263b;
+  color: #e0e1dd;
+  border-top: 1px solid #415a77;
+  padding-top: 2rem;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: #e0e1dd;
+}
+
+/* Social icons */
+.social-icons i {
+  font-size: 24px;
+  color: #e0e1dd;
+}

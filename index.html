@@ -1,29 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+
+    <!-- Eigen CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header></header>
+    <!-- Header -->
+    <header class="border-bottom p-3">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <a class="navbar-brand" href="/index.html">
+            <img src="/images/Logo.png" alt="Website Logo" width="100" />
+          </a>
 
-    <nav>
-      <section>
-        <img src="/images/Logo.png" alt="" />
-      </section>
-      <section>
-        <ul>
-          <li>Home</li>
-          <li>Overzicht</li>
-          <li>Detail</li>
-          <li>Contact</li>
-        </ul>
-      </section>
-    </nav>
+          <button 
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <main></main>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/portfolio.html">Overzicht</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/naam.html">Detail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    <footer></footer>
+    <!-- Main Content -->
+    <main class="container my-5">
+      <!-- Titel Home -->
+      <div class="row text-center mb-4">
+        <div class="col-12">
+          <h2>Home</h2>
+        </div>
+      </div>
+
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 order-lg-2 text-center mb-4 mb-lg-0">
+          <img
+            src="/images/grote afbeelding.png"
+            alt="Grote afbeelding"
+            class="img-fluid border"
+          />
+        </div>
+
+        <!-- Tekst links op desktop, onder afbeelding mobiel -->
+        <div class="col-lg-6 order-lg-1">
+          <h3 class="fw-bold">Mijn portfolio</h3>
+          <p class="mt-3 text-start">
+            Deze portfolio toont een selectie van projecten en opdrachten die
+            mijn vaardigheden en creativiteit weerspiegelen. Elk onderdeel geeft
+            een inkijk in de tools, technieken en processen die ik gebruik.
+            Bekijk gerust de verschillende pagina's en laat je inspireren door
+            het resultaat.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-top py-5">
+      <div class="container">
+        <!-- Social icons -->
+        <div
+          class="row row-cols-2 row-cols-md-4 g-4 justify-content-center text-center mb-4"
+        >
+          <div class="col">
+            <img
+              src="/images/Social/snapchat.png"
+              alt="Snapchat"
+              class="border rounded-0 mb-2"
+              width="50"
+              height="50"
+            />
+            <div>Snapchat</div>
+          </div>
+          <div class="col">
+            <img
+              src="/images/Social/instagram.png"
+              alt="Instagram"
+              class="border rounded-0 mb-2"
+              width="50"
+              height="50"
+            />
+            <div>Instagram</div>
+          </div>
+          <div class="col">
+            <img
+              src="/images/Social/facebook.png"
+              alt="Facebook"
+              class="border rounded-0 mb-2"
+              width="50"
+              height="50"
+            />
+            <div>Facebook</div>
+          </div>
+          <div class="col">
+            <img
+              src="/images/Social/x.png"
+              alt="X"
+              class="border rounded-0 mb-2"
+              width="50"
+              height="50"
+            />
+            <div>X</div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center">
+          <small>&copy; websitenaam 2025</small>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
