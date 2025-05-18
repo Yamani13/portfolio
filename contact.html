@@ -71,7 +71,6 @@
 
     <!-- Main -->
     <main class="container my-5">
-      
       <!-- Contacteer ons -->
       <section class="text-center mb-5">
         <h2 class="mb-4">Contacteer ons</h2>
@@ -187,9 +186,26 @@
           </div>
         </div>
         <div class="text-center">
-          <small>&copy; websitenaam 2025</small>
+          <small>&copy; yamani-elsoudani 2025</small>
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+      const locationCoordinates = [51.2194, 4.4025];
+      const map = L.map("map").setView(locationCoordinates, 13);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      L.marker(locationCoordinates)
+        .addTo(map)
+        .bindPopup("Ellermanstraat 33, 2060 Antwerpen")
+        .openPopup();
+    </script>
   </body>
 </html>
