@@ -1,0 +1,7 @@
+#map {
+        width: 100%;
+        height: 400px; /* Adjust the height as needed */
+        margin-bottom: 20px;
+        border: 1px solid #ddd; /* Optional: Border to resemble iFrame */
+        border-radius: 8px; /* Optional: Rounded corners */
+      }
